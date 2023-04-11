@@ -1,9 +1,9 @@
 ### Introduction
 
-This second programming assignment will require you to write an R
+This second  programming assignment will require you to write an R
 function that is able to cache potentially time-consuming computations.
-For example, taking the mean of a numeric vector is typically a fast
-operation. However, for a very long vector, it may take too long to
+For example,  taking the mean of a numeric vector is typically a fast
+operation. However, for  a very long vector, it may take too long to
 compute the mean, especially if it has to be computed repeatedly (e.g.
 in a loop). IF the contents of a vector are not changing, it may make
 sense to cache the value of the mean so that when we need it again, it
@@ -15,17 +15,17 @@ of an R object.
 ### Example: Caching the Mean of a Vector
 
 In this example we introduce the `<<-` operator which can be used to
-assign a value to an object in an environment that is different from the
+assign a value to an  object in an environment that is different from the
 current environment. Below are two functions that are used to create a
 special object that stores a numeric vector and caches its mean.
 
 The first function, `makeVector` creates a special "vector", which is
 really a list containing a function to
 
-1.  set the value of the vector
-2.  get the value of the vector
-3.  set the value of the mean
-4.  get the value of the mean
+1.   set the value of the vector
+2.   get the value of the vector
+3.   set the value of the mean
+4.   get the value of the mean
 
 <!-- -->
 
@@ -43,7 +43,7 @@ really a list containing a function to
                  getmean = getmean)
     }
 
-The following function calculates the mean of the special "vector"
+The following func tion calculates the mean of the special "vector"
 created with the above function. However, it first checks to see if the
 mean has already been calculated. If so, it `get`s the mean from the
 cache and skips the computation. Otherwise, it calculates the mean of
@@ -97,7 +97,7 @@ In order to complete this assignment, you must do the following:
     solution in that file (please do not rename the file).
 4.  Commit your completed R file into YOUR git repository and push your
     git branch to the GitHub repository under your account.
-5.  Submit to Coursera the URL to your GitHub repository that contains
+5.  Submit to Coursera the URL to your GitHub repository that contains 
     the completed R code for the assignments.
 
 ### Grading
